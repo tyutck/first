@@ -7,7 +7,11 @@ interface Behaviour {
 }
 
 public enum Color implements Behaviour {
-	RED("红色", 1), GREEN("绿色", 2), BLANK("白色", 3), YELLOW("黄色", 4);
+	RED("红色", 1){
+		public long todo(long i){
+			return i+1;
+		}
+	}, GREEN("绿色", 2), BLANK("白色", 3), YELLOW("黄色", 4);
 	// 成员变量
 	private String name;
 	private int index;
@@ -27,6 +31,11 @@ public enum Color implements Behaviour {
 		}
 		return null;
 	}
+	
+	//待实现方法
+	public long todo(long duration) {
+        throw new AbstractMethodError();
+    }
 
 	// get set 方法
 	public String getName() {
