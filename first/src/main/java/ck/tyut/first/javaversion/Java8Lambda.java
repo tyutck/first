@@ -1,4 +1,4 @@
-package ck.tyut.first.utils;
+package ck.tyut.first.javaversion;
 public class Java8Lambda {
    public static void main(String args[]){
       Java8Lambda tester = new Java8Lambda();

@@ -1,4 +1,4 @@
-package ck.tyut.first.utils;
+package ck.tyut.first.javaversion;
 
 public abstract class Test {
 

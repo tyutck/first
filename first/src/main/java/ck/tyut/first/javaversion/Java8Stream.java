@@ -1,4 +1,4 @@
-package ck.tyut.first.utils;
+package ck.tyut.first.javaversion;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;

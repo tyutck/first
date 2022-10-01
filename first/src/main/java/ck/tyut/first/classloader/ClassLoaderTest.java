@@ -15,7 +15,7 @@ package ck.tyut.first.classloader;
  * */
 public class ClassLoaderTest {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		System.out.println(ClassLoaderTest.class.getClassLoader().getClass().getName());
 		System.out.println(System.class.getClassLoader());
 		ClassLoader loader = ClassLoaderTest.class.getClassLoader();
@@ -24,5 +24,9 @@ public class ClassLoaderTest {
 			loader  = loader.getParent();
 		}
 		System.out.println(loader);
+
+		Class c1 = new MyClassLoad().loadClass("UserService");
+		Object object = c1.newInstance();
+		System.out.println(object);
 	}
 }
